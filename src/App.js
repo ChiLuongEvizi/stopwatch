@@ -2,11 +2,7 @@ import "./App.css";
 import Stopwatch from "./Stopwatch";
 
 function App() {
-  return (
-    <>
-      <Stopwatch></Stopwatch>
-    </>
-  );
+  return <Stopwatch />;
 }
 
 export default App;
