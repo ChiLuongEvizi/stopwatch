@@ -52,7 +52,7 @@ const Stopwatch = () => {
             className="font-bold text-xl"
             onClick={() => setRunning(!running)}
           >
-            {!running ? "Start" : "Stop"}
+            {running ? "Stop" : "Start"}
           </button>
           <button className="font-bold text-xl" onClick={handleReset}>
             Reset
@@ -60,9 +60,7 @@ const Stopwatch = () => {
 
           <button
             className={`font-bold text-xl ${
-              !time || !running
-                ? "opacity-60 cursor-default pointer-events-none"
-                : ""
+              !running ? "opacity-60 cursor-default pointer-events-none" : ""
             }`}
             onClick={handleLaps}
           >
